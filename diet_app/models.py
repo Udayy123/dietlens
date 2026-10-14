@@ -56,3 +56,5 @@ class FoodLog(models.Model):
     picture=models.ImageField(upload_to="foodlog",null=True)
 
     owner=models.ForeignKey(CustomUser, on_delete=models.CASCADE,related_name="foodentries")
+
+    created_at=models.DateTimeField(auto_now_add=True)

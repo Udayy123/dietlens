@@ -27,5 +27,6 @@ urlpatterns = [
     path('profile/<int:pk>',ProfileRetriveView.as_view()),
     path('user/<int:pk>',UserRetriveView.as_view()),
     path('foodlog',FoodLogCreateListView.as_view()),
-    path('foodlog/<int:pk>',FoodLogRetriveUpdateDestroyView.as_view())
+    path('foodlog/<int:pk>',FoodLogRetriveUpdateDestroyView.as_view()),
+    path('summery',DietSummeryView.as_view())
 ]
